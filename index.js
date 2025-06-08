@@ -94,7 +94,7 @@ function controllo(numeri, numDaTrovare) {
     return ricerca    
 }
 
-// Esercizio 6
+// Esercizio 7
 let gradiAngolo = parseInt(prompt("Inserisci i gradi dell'angolo"));
 let risultato = verificaAngolo(gradiAngolo);
 console.log(risultato);
@@ -113,7 +113,7 @@ function verificaAngolo(gradiAngolo) {
     }
 }
 
-// Esercizio 7
+// Esercizio 8
 let CreaAcronimo = prompt("Inserisci una frase per creare un acronimo");
 let acronimo = generaAcronimo(CreaAcronimo);
 console.log(acronimo);
