@@ -127,5 +127,32 @@ function generaAcronimo(frase) {
     }
     return acronimo;
 }
+
+//EXTRA 
+// Esercizio 1
+let stringa = prompt("Inserisci una stringa");
+let risultato = caratterePiuFrequenti(stringa);
+console.log("Carattere più frequente:", risultato.caratteri.join(", "));
+
+function caratterePiuFrequenti(stringa) {
+    let frequenze = {};
+    let maxFrequenza = 0;
+    for (let char of stringa) {
+        if (char === ' ') continue;
+        frequenze[char] = (frequenze[char] || 0) + 1;
+        if (frequenze[char] > maxFrequenza) {
+            maxFrequenza = frequenze[char];
+        }
+    }
+    let PiuFrequente = [];
+    for (let char in frequenze) {
+        if (frequenze[char] === maxFrequenza) {
+            PiuFrequente.push(char);
+        }
+    }
+    
+    return { caratteri: PiuFrequente };
+}
 */
 
+        
